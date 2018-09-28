@@ -1,0 +1,30 @@
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+.sprite {
+    background-image: url(spritesheet.png);    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite-icon-google-plus {
+        .stitches-sprite(-5px, -5px, 16px, 16px);
+    }
+
+    &.sprite-icon-linkedin {
+        .stitches-sprite(-31px, -5px, 16px, 14px);
+    }
+
+    &.sprite-icon-pinterest {
+        .stitches-sprite(-57px, -5px, 16px, 16px);
+    }
+
+    &.sprite-icon-rss {
+        .stitches-sprite(-83px, -5px, 14px, 14px);
+    }
+
+    &.sprite-icon-twitter {
+        .stitches-sprite(-107px, -5px, 16px, 14px);
+    }
+}

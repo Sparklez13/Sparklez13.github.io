@@ -1,0 +1,131 @@
+.footer__wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  .container();
+  padding-top: 28px;
+  padding-bottom: 28px;
+
+  border-bottom: 1px solid #d2c7bd;
+}
+.footer__columns {
+  width: 225px;
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.footer__intro {
+  padding: 0;
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: @title-color;
+}
+.footer__links-list {
+  margin: 0;
+  margin-top: 19px;
+  padding: 0;
+
+  list-style: none;
+}
+.footer__link-item {
+  padding-bottom: 2px;
+  font-size: 13px;
+  line-height: 21px;
+}
+.footer__link {
+  text-decoration: none;
+  color: #e95a3c;
+  &:hover {
+    color: @title-color;
+  }
+}
+.footer__address-text {
+  margin: 0;
+  margin-top: 19px;
+  padding: 0;
+}
+.footer__blog-post-title {
+  margin-top: 18px;
+  font-size: 13px;
+  line-height: 16px;
+  color: #e95a3c;
+}
+.footer__blog-post {
+  margin-top: 7px;
+  padding-right: 9px;
+}
+.footer__contacts {
+  margin-top: 21px;
+
+  font-size: 0;
+}
+.footer__social-button {
+  position: relative;
+  margin-right: 10px;
+  padding: 0;
+  width: 33px;
+  height: 33px;
+  font-size: 0;
+  line-height: 0;
+
+  border-radius: 50%;
+  border: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  &--google-plus::before {
+    .stitches-sprite(-5px, -5px, 16px, 16px);
+  }
+  &--linked-in::before {
+    .stitches-sprite(-31px, -5px, 16px, 14px);
+  }
+  &--pinterest::before {
+    .stitches-sprite(-57px, -5px, 16px, 16px);
+  }
+  &--rss::before {
+    .stitches-sprite(-83px, -5px, 14px, 14px);
+  }
+  &--twitter::before {
+    .stitches-sprite(-107px, -5px, 16px, 14px);
+  }
+}
+.footer__form {
+  margin-top: 11px;
+}
+.footer__input {
+  padding: 13px 8px;
+  width: 100%;
+  border-radius: 12px;
+  background-color: #e6dfd9;
+  border: none;
+}
+.footer__button {
+  margin-top: 11px;
+}
+.footer__copywright {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  .container();
+  padding-top: 19px;
+  padding-bottom: 18px;
+}
+.footer__made-by {
+  margin-left: auto;
+}
