@@ -1,0 +1,28 @@
+.container() {
+  width: 88%;
+  margin: 0 auto;
+  @media @tablet-widths {
+    width: 89%;
+  }
+  @media @desktop-widths {
+    width: 78%;
+  }
+}
+.sprite(@width, @height, @x, @y, @url) {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: @width;
+    height: @height;
+    background: url(@url) no-repeat;
+    background-position: @x @y;
+  } 
+}

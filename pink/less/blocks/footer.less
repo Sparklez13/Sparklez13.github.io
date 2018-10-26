@@ -1,0 +1,105 @@
+.footer {
+  display: none;
+}
+@media @tablet-widths {
+  .footer {
+    display: block;
+  }
+  .footer__wrapper {
+    .container();
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    height: 127px;
+  }
+  .footer__logo {
+    min-width: 150px;
+    min-height: 40px;
+    .sprite (145px, 40px, -620px, -5px, @spritesheet);
+
+    cursor: pointer;
+    &:hover {
+      .sprite (145px, 40px, -775px, -5px, @spritesheet);
+    }
+  }
+  .footer__social-buttons-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+  }
+  .footer__social-button {
+    display: block;
+    margin-right: 12px;
+    width: 45px;
+    height: 45px;
+    border: 3px solid #e9ebec;
+    border-radius: 50%;
+    &:hover {
+      border: 3px solid #000;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &--twitter {
+      .sprite(19px, 15px, -930px, -5px, @spritesheet);
+    }
+    &--facebook {
+      .sprite(9px, 19px, -115px, -5px, @spritesheet);
+    }
+    &--youtube {
+      .sprite(15px, 14px, -959px, -5px, @spritesheet);
+      &::before {
+        left: 55%;
+      }
+    }
+  }
+  .footer__made-by {
+    vertical-align: center;
+    & p {
+      padding-top: 5px;
+      float: left;
+    }
+  }
+  .footer__htmlacademy-link {
+    color: #fff;
+  }
+  .footer__html-academy-link:hover .footer__htmlacademy-logo {
+    .sprite(27px, 34px, -171px, -5px, @spritesheet);
+  }
+  .footer__html-academy-link:active .footer__htmlacademy-logo {
+    opacity: 0.3;
+  }
+  .footer__htmlacademy-logo {
+    float: right;
+    margin-left: 15px;
+    width: 27px;
+    height: 34px;
+    .sprite(27px, 34px, -134px, -5px, @spritesheet);
+  }
+}
+@media @desktop-widths {
+  .footer__wrapper {
+    height: 198px;
+  }
+}
